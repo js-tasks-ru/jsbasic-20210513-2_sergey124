@@ -21,4 +21,11 @@ describe('5-module-1-task', () => {
 
     expect(buttonElement.hidden).toBeTruthy();
   });
+
+  function hideSelf() {
+    let button = document.querySelector(".hide-self-button");
+    button.addEventListener("click", () => button.setAttribute("hidden", true));
+  }
+  hideSelf();
 });
+
